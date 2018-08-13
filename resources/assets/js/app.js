@@ -37,8 +37,7 @@ const App = new Vue({
 
 		places: {},
 		Kyiv: {'address': 'Kyiv', 'lat': 50.45466, 'lng': 30.5238},
-		fillPlace: {'id': '', 'address': '', 'lat': '', 'lng': ''},
-		addressFilter: ''
+		fillPlace: {'id': '', 'address': '', 'lat': '', 'lng': ''}
 
 	},
 
@@ -62,18 +61,6 @@ const App = new Vue({
 				url = '/places?page=' + page + '&place=' + place;
 
 			}
-
-			axios.get(url).then(response => {
-
-				this.places = response.data;
-
-			});
-
-		},
-
-		getKeysForDropDownList() {
-
-			let url = '/places?page=' + page;
 
 			axios.get(url).then(response => {
 

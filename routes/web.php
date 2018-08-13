@@ -17,6 +17,4 @@ Route::get('/', function () {
     
 });
 
-// Route::get('/', 'PlacesController@index');
-
-Route::resource('places', 'PlacesController', ['except' => ['create', 'edit']]);
+Route::resource('places', 'PlacesController', ['except' => ['create', 'edit', 'show']]);

@@ -39,6 +39,7 @@ class AppServiceProvider extends ServiceProvider
                     'pageName' => $pageName,
                 ]
             );
+            
             $results = $paginator->appends('place', request('place'));
 
             return $results;

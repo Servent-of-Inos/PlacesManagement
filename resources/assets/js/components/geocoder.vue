@@ -140,8 +140,8 @@
             message:  this.newPlace.address + 'successfully changed!'
         });
 
-          this.newPlace = {'id': '', 'address': '', 'lat': '', 'lng': ''};
-          this.errors = [];
+        this.newPlace = {'id': '', 'address': '', 'lat': '', 'lng': ''};
+        this.errors = [];
 
         this.$modal.hide('editPlace');
 
